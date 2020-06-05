@@ -1,0 +1,440 @@
+// In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
+// In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
+body {
+    color: #4a4949;
+    font-size: 1rem;
+    font-family: montserrat, sans-serif !important;
+}
+
+.sidebar-nav ul .sidebar-item .sidebar-link {
+    opacity: 1;
+}
+
+.sidebar-nav ul .nav-small-cap {
+    opacity: 1;
+}
+input[type="radio"], input[type="checkbox"]{
+    margin-right:5px;
+}
+
+.topbar .nav-toggler,
+.topbar .topbartoggler {
+    color: #ffffff;
+}
+
+// puts the google places autocomplete dropdown results above the bootstrap modal 1050 zindex.
+.pac-container {
+    z-index: 10000 !important;
+}
+.comment-widgets .comment-row:hover, .comment-widgets .comment-row.active {
+    background-color: #ffffff;
+}
+.form-control {
+    color: #000000;
+}
+
+.form-control:focus {
+    color: #000000;
+    border: 1px solid #57a3fa;
+}
+
+.form-control:active {
+    color: #000000;
+    border: 1px solid #57a3fa;
+}
+
+.choices__list--dropdown {
+    color: #000000;
+    border: 1px solid #57a3fa;
+}
+
+.input-group-text {
+    color: #000000;
+}
+
+.input-group-prepend,
+.input-group-append {
+    border: none;
+}
+.ais-SearchBox-form {
+    margin-bottom: 15px;
+}
+.address-search {
+    z-index: 1051 !important;
+}
+
+.fa-remove:before {
+    content: "\f00d"
+}
+
+.fa-remove {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.fa-times {
+    color: black;
+    background-color: #000;
+}
+
+.choices__list--single {
+    font-weight: normal;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #6abd46;
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000000;
+    font-weight: 700;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    font-size: 1.1rem;
+    letter-spacing: 0.07rem;
+    font-weight: 400;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: #57a3fa;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: #fff200;
+    background-color: #000000;
+
+}
+
+
+.sidebar-nav ul .sidebar-item.selected>.sidebar-link,
+.sidebar-nav ul .sidebar-item.selected>.sidebar-link i {
+    text-decoration: underline;
+    color: #6abd46;
+
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #6abd46;
+}
+
+.page-wrapper {
+    background: #fafafa;
+}
+.component-settings .nav>li>a {
+    padding: 5px 10px !important;
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+#main-wrapper[data-layout='vertical'] .topbar .navbar-collapse[data-navbarbg='skin6'] {
+
+    background: #fafafa
+}
+
+.nav-tabs {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom:15px;
+}
+
+.page-breadcrumb .page-title {
+    font-size: 12px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.formio-component-listingProfileImages img {
+    display: inline !important;
+}
+
+#e40mmne>div>div:nth-child(1) {
+    display: inline-flex;
+    margin-bottom: 25px;
+}
+
+.mailbox .message-center {
+    height: 100%;
+}
+
+#e0cmy5:hover {
+    padding: 0px;
+    margin-top: 25px;
+    margin-right: 19px;
+    margin-left: 17px;
+    transition-delay: 2ms;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #000;
+}
+
+.help-block {
+    font-size: 11px;
+}
+
+
+.blog-post {
+    margin: 5px;
+}
+
+.agent-index {
+    max-width: 100%;
+}
+
+.agent-header-index {
+    text-align: center;
+}
+
+.agent-header-index2 {
+    text-align: left;
+}
+
+.table .agent-header-index tbody tr:nth-of-type(odd) {
+    background-color: #ffffff !important;
+}
+
+.list-group-item {
+    background-color: transparent;
+}
+
+.page-breadcrumb {
+    padding: 0px 20px 0 20px;
+}
+
+.page-wrapper>.container-fluid {
+    padding: 5px 20px 10px 20px;
+    min-height: calc(100vh - 180px);
+}
+
+h2 {font-size: 1.25rem; font-weight: bold;}
+.process-3 {
+    list-style: none;
+    position: relative;
+  }
+  .process-3 li {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .process-3 li .process__number {
+    float: left;
+    width: 15%;
+    width: 3.71428571em;
+    height: 3.71428571em;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background: #6abd46;
+    text-align: center;
+  }
+  .process-3 li .process__number span {
+    font-size: 1.35714286em;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    top: 12px;
+  }
+  .process-3 li .process__body {
+    width: 80%;
+    float: right;
+  }
+  .process-3 li .process__body h4 {
+    margin-bottom: 0.342105263157895em;
+  }
+  .process-3 li:not(:last-child) {
+    margin-bottom: 2em;
+  }
+  .process-3:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    left: 1.85714286em;
+    top: 0;
+  }
+  .bg--dark .process-3 li .process__number {
+    background: #252525;
+  }
+  .bg--dark .process-3:before {
+    border-color: #aaa;
+  }
+
+  .timeline-badge{border: #000 solid 1px;}
+
+  .index-headline{
+    padding-left: 5px;
+}
+
+.btn-warning{
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-warning:hover{
+    font-weight: 700;
+    background-color: #000;
+    color: #fff200
+}
+
+.btn-warning:focus{
+    background-color: #000;
+    color: #fff200;
+    font-weight: 700;
+}
+
+small {
+    line-height: 0.9rem;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #000000;
+    background-color: #fff200;
+}
+
+.carousel-item > img {width: 100%}
+
+.table-stock {
+    font-size:0.9rem;
+}
+.choices__list--multiple .choices__item {
+    background-color: #fff200 !important;
+    border: 1px solid #b1b0b0 !important;
+    color: #000000 !important;
+}
+
+.choices[data-type*=select-multiple] .choices__button, .choices[data-type*=text] .choices__button {
+    background-image:url("https://digital-office-files.s3-us-west-2.amazonaws.com/times-solid.svg") !important;
+
+}
+
+.formio-button-remove-row {
+    background-color: #fff200 !important;
+    border: 1px solid #b1b0b0 !important;
+    color: #000000 !important;
+    background-image:url("https://digital-office-files.s3-us-west-2.amazonaws.com/times-solid.svg") !important;
+    text-indent: -9999px;
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: 50%;
+    font-size: 1rem !important;
+    line-height: 0.9rem !important;
+}
+.input-group-addon
+{
+    cursor: pointer;
+    background-color: #e8e8e7;
+    padding: 5px;
+    border: 1px solid #d4d4d4;
+    border-left: none;
+}
+
+.formio-dialog.formio-dialog-theme-default .formio-dialog-close:before {
+     /* display: block; */
+     background-color: #fff200 !important;
+     border: 1px solid #b1b0b0 !important;
+     /* color: #000000 !important; */
+     background-image: url(https://digital-office-files.s3-us-west-2.amazonaws.com/times-solid.svg) !important;
+     /* text-indent: -9999px; */
+     /* -webkit-appearance: none; */
+     appearance: none;
+     border: 0;
+     /* background-color: transparent; */
+     background-repeat: no-repeat !important;
+     background-position: center !important;
+     cursor: pointer;
+     background-size: 40% !important;
+    margin: 3px;
+    display: block;
+    padding: 3px;
+    margin-top: 3px;
+    /* background: 0 0; */
+    color: transparent !important;
+    font-size: 1rem !important;
+    line-height: 0.9rem !important;
+    /* line-height: 26px; */
+    /* text-align: center; */
+}
+.img-commercial-stock{
+    height:250px;
+}
+
+#e2wdtaf > div > div {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+#e2wdtaf img {
+    padding-right:10px;
+    padding-bottom: 10px;
+}
+
+#e2wdtaf > div > div:nth-child(2) > div {
+    padding:5px;
+}
+
+@media (max-width:768px){
+    h3 {
+        font-size: 0.90rem;
+    }
+    h4 {
+        font-size: 0.85rem;
+    }
+    h5 {
+        font-size: 0.8rem;
+    }
+    .page-link {
+       
+        padding: 0.5rem 0.2rem;
+        font-size: 0.60rem;
+    }
+    .label-price{font-size: 0.8rem;
+        padding: 2px;
+    }
+    .label-city{font-size: 0.8rem;
+        padding: 2px;
+    }
+    img.index-icon{
+        display: none;
+    }
+
+    .index-room{
+        font-size: 0.65rem;
+    }
+
+    .index-headline{
+        font-size: 1rem;
+    } 
+p.index-description{
+    font-size: 0.85rem;
+}
+.lead{
+    font-size: 0.90rem;
+}
+h3.yellow-headline{
+    font-size: 1.15rem;
+}
+
+h2.yellow-headline
+{
+    font-size: 1.35rem;
+}
+.nav-tabs .nav-link{
+    font-size: 0.8rem;
+}
+}

@@ -1,0 +1,209 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-body printableArea">
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="float:left">
+                        <img src="https://www.ooba.co.za/app/uploads/2018/05/ooba-Logo-Green-Copy.png"
+                            style="max-width: 120px;">
+                    </div>
+                    <div style="float: right">
+                        <h4 class="font-muted p-t-15">Phone us on 0860 00 66 22 Or Email at mail@ooba.co.za</h4>
+                        <!--<p class="text-muted">E 104, Dharti-2,
+                              <br/> Nr' Viswakarma Temple,
+                              <br/> Talaja Road,
+                              <br/> Bhavnagar - 364002</p>-->
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="float:left">
+                        <h4>R{{ service.resource?.data.price | number }}</h4>
+                    </div>
+                    <div style="float: right">
+                        <h4 class="font-bold">{{ service.resource?.data.address.formatted_address }}</h4>
+                        <!--<p class="text-muted">E 104, Dharti-2,
+                              <br/> Nr' Viswakarma Temple,
+                              <br/> Talaja Road,
+                              <br/> Bhavnagar - 364002</p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7"><img src="{{ service.resource?.data.images[0].url }}" class="img-fluid"
+                        style="object-fit: cover;max-height:340px;min-width:100%;min-height:340px;" />
+                </div>
+
+                <div class="col-md-5"><img src="{{ service.resource?.data.images[1].url }}" class="img-fluid"
+                        style="object-fit: cover;max-height:160px;min-width:100%;" /><img
+                        src="{{ service.resource?.data.images[2].url }}" class="img-fluid m-t-20"
+                        style="object-fit: cover; max-height:160px;min-width:100%;" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8" style="padding-top: 30px;">
+                    <div style="text-align: justify;" [innerHTML]="service.resource?.data.description"></div>
+
+                </div>
+                <div class="col-md-4" style="padding-top: 30px;">
+                    <div class="card-body">
+                        <ul class="list-style-none float-left m-r-30">
+                            <li class="m-t-10">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/bedroom.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.bedrooms }}</h5><span
+                                            class="text-muted">Bedrooms</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="m-t-10">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/bathroom.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.bathrooms }}</h5><span
+                                            class="text-muted">Bathrooms</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="m-t-10 m-b-10">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/kitchen.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.kitchens }}</h5><span
+                                            class="text-muted">Kitchens</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="m-t-10">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/garage.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.garages }}</h5><span
+                                            class="text-muted">Garages</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="m-t-10 m-b-10">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/parking.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.carPorts }}</h5><span
+                                            class="text-muted">Car Ports</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                        <ul class="list-style-none">
+
+                            <li class="m-t-10" *ngIf="service.resource?.data.studies">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/studies.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.studies }}</h5><span
+                                            class="text-muted">Study Rooms</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="m-t-10 m-b-10" *ngIf="service.resource?.data.flatlet">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/bathrooms.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.flatlet }}</h5><span
+                                            class="text-muted">Flatlet</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="m-t-10 m-b-10" *ngIf="service.resource?.data.domesticAccomodation">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/bathrooms.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.domesticAccomodation }}</h5><span
+                                            class="text-muted">Domestic Rooms</span>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="m-t-10 m-b-10">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/view.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.views }}</h5><span
+                                            class="text-muted">Views</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="m-t-10 m-b-10">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/pool.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.pool }}</h5><span
+                                            class="text-muted">Pool</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="m-t-10 m-b-10">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/security.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.security }}</h5><span
+                                            class="text-muted">Security</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <!--                                        <li class="m-t-10 m-b-10">
+                                            <div class="d-flex align-items-center"><img src="../../assets/images/bathrooms.png" class="img-fluid" style="width:28px; object-fit: cover;" />
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">{{ service.resource?.data.petsAllowed }}</h5><span class="text-muted">Pets Allowed</span>
+                                                </div>
+                                            </div>
+                                         
+                                        </li>
+                                        <li class="m-t-10 m-b-10">
+                                            <div class="d-flex align-items-center"><img src="../../assets/images/bathrooms.png" class="img-fluid" style="width:28px; object-fit: cover;" />
+                                                <div class="m-l-10">
+                                                    <h5 class="m-b-0">{{ service.resource?.data.receptionRooms }}</h5><span class="text-muted">Reception Rooms</span>
+                                                </div>
+                                            </div>
+                                         
+                                        </li>
+                                    -->
+                            <li class="m-t-10 m-b-10" *ngIf="service.resource?.data.floor">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/floor.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.floor | number }}m²</h5><span
+                                            class="text-muted">Floor Size</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="m-t-10 m-b-10" *ngIf="service.resource?.data.land">
+                                <div class="d-flex align-items-center"><img src="../../assets/images/land.png"
+                                        class="img-fluid" style="width:28px; object-fit: cover;" />
+                                    <div class="m-l-10">
+                                        <h5 class="m-b-0">{{ service.resource?.data.land | number }}m²</h5><span
+                                            class="text-muted">Land Size</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

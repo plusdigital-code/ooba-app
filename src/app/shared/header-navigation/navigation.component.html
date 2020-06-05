@@ -1,0 +1,43 @@
+<!-- ============================================================== -->
+<!-- toggle and nav items -->
+<!-- ============================================================== -->
+<ul *ngIf="auth.authenticated" class="navbar-nav float-left mr-auto">
+  <li class="nav-item d-none d-md-block">
+    <a (click)="toggleSidebar.emit()" class="nav-link sidebartoggler waves-effect waves-light"
+      style="text-decoration: none;" href="javascript:void(0)" data-sidebartype="mini-sidebar">
+      <i class="sl-icon-menu font-20"></i>
+    </a>
+  </li>
+  <!-- ============================================================== -->
+  <!-- mega menu -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- End Messages -->
+  <!-- ============================================================== -->
+</ul>
+
+<!-- ============================================================== -->
+<!-- Right side toggle and nav items -->
+<!-- ============================================================== -->
+<ul class="navbar-nav float-right">
+  <!-- ============================================================== -->
+  <!-- Search -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- create new -->
+  <!-- ============================================================== -->
+  <li class="nav-item" routerLinkActive="active" *ngIf="!auth.authenticated">
+    <a class="nav-link" routerLink="auth" style="border: 1px solid #000; border-radius: 3px;"><i
+        class="mdi mdi-power"></i> Login | Register</a>
+  </li>
+  <li class="nav-item" *ngIf="auth.authenticated">
+    <a class="nav-link" routerLink="home" (click)="auth.logout()"><i class="mdi mdi-power"></i> Logout</a>
+  </li>
+  <!-- ============================================================== -->
+  <!-- User profile and search -->
+  <!-- ============================================================== -->
+
+  <!-- ============================================================== -->
+  <!-- User profile and search -->
+  <!-- ============================================================== -->
+</ul>
