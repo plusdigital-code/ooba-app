@@ -28,7 +28,7 @@
         "angular-datatables": "^6.0.0",
         "angular-formio": "^3.27.1",
         "angular-instantsearch": "^2.2.2",
-        "bootstrap": "^4.1.1",
+        "bootstrap": "^4.3.1",
         "c3": "^0.4.23",
         "chart.js": "^2.7.1",
         "chartist": "^0.11.0",
